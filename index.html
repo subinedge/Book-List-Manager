@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Book List Manager</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+
+    <style>
+      body {
+        font-size: 1.8rem;
+        font-family: 'verdana';
+      }
+
+      .heading {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+      }
+
+      .success,
+      .error {
+        color: white;
+        padding: 20px;
+        margin: 10px 0 10px 10px;
+      }
+
+      .success {
+        background-color: green;
+      }
+
+      .error {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Book List Manager</h1>
+
+      <form id="myForm">
+        <div>
+          <label>Title</label>
+          <input type="text" class="u-full-width" id="title" />
+        </div>
+
+        <div>
+          <label>Author</label>
+          <input type="text" class="u-full-width" id="author" />
+        </div>
+
+        <div>
+          <label>ISBN No.</label>
+          <input type="text" class="u-full-width" id="isbn" />
+        </div>
+
+        <div>
+          <input type="submit" value="Submit" id="btn" class="u-full-width" />
+        </div>
+      </form>
+
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN No.</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <!-- <script src="JS/appWithPrototypes.js"></script> -->
+    <!-- <script src="JS/appES6.js"></script> -->
+    <script src="JS/appES6LocalStorage.js"></script>
+  </body>
+</html>
